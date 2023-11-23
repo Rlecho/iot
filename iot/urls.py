@@ -28,7 +28,7 @@ urlpatterns = [
     path('api/', include('facturation.urls')),
     path('api/', include('recharges.urls')),
     path('api/', include('proprietes.urls')),
-    path('api/', include('gestionnaires.urls')),
+    path('index/', include('gestionnaires.urls')),
 
     # Définition des schémas Swagger
     re_path(r'^swagger(?P<format>\.json|\.yaml)$', schema_view.without_ui(cache_timeout=0), name='schema-json'),
